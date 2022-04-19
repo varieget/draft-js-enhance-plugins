@@ -1,0 +1,34 @@
+{
+  "name": "@draft-js-enhance-plugins/code",
+  "version": "1.0.0",
+  "description": "Code Plugin for draft.js",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "rollup --config ../../rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varieget/draft-js-enhance-plugins.git"
+  },
+  "keywords": [
+    "draft-js",
+    "draft-js-plugins"
+  ],
+  "author": "varieget",
+  "license": "MIT",
+  "dependencies": {
+    "@types/prismjs": "^1.26.0",
+    "draft-js-prism": "^1.0.6",
+    "prismjs": "^1.28.0"
+  },
+  "peerDependencies": {
+    "draft-js": "^0.10.1 || ^0.11.0",
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  }
+}
