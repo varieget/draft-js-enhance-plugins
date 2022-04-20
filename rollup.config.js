@@ -27,7 +27,7 @@ export default defineConfig({
   external,
   plugins: [
     nodeResolve({ extensions }),
-    typescript({ tsconfig: 'tsconfig.json' }),
+    typescript({ tsconfig: './tsconfig.json' }),
     babel({ extensions, babelHelpers: 'bundled' }),
     commonjs(),
   ],
