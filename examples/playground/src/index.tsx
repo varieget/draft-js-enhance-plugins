@@ -16,6 +16,7 @@ import createBlockquotePlugin from '@draft-js-enhance-plugins/blockquote';
 import createClearFormatPlugin from '@draft-js-enhance-plugins/clear-format';
 import createCodePlugin from '@draft-js-enhance-plugins/code';
 import createInlineCodePlugin from '@draft-js-enhance-plugins/inline-code';
+import createMarkdownConvertPlugin from '@draft-js-enhance-plugins/markdown-convert';
 import createPasteHTMLPlugin from '@draft-js-enhance-plugins/paste-html';
 import createSoftNewlinePlugin from '@draft-js-enhance-plugins/soft-newline';
 
@@ -23,6 +24,7 @@ const blockquotePlugin = createBlockquotePlugin();
 const clearFormatPlugin = createClearFormatPlugin();
 const codePlugin = createCodePlugin();
 const inlineCodePlugin = createInlineCodePlugin();
+const markdownConvertPlugin = createMarkdownConvertPlugin();
 const pasteHTMLPlugin = createPasteHTMLPlugin({
   convertFromHTML(html: string) {
     // Need advanced usage?
@@ -42,6 +44,7 @@ const plugins = [
   clearFormatPlugin,
   codePlugin,
   inlineCodePlugin,
+  markdownConvertPlugin,
   pasteHTMLPlugin,
   softNewlinePlugin,
 ];
