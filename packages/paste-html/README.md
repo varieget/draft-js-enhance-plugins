@@ -22,17 +22,27 @@ type convertFromHTML = (html: string) => ContentState;
 
 Given an HTML fragment, convert it to a `ContentState`.
 
+Recommend to use the `convertFromHTML` from [`draft-convert`](https://www.npmjs.com/package/draft-convert).
+
 ## Usage
 
 ```tsx
-import { EditorState } from 'draft-js';
+import { EditorState, ContentState, convertFromHTML } from 'draft-js';
 import Editor from '@draft-js-plugins/editor';
 import createPasteHTMLPlugin from '@draft-js-enhance-plugins/paste-html';
 
-// See: https://www.npmjs.com/package/draft-convert
-// import { convertFromHTML } from 'draft-convert';
+const pasteHTMLPlugin = createPasteHTMLPlugin({
+  convertFromHTML(html: string) {
+    // NOTE: draft.js convertFromHTML is NOT recommended
+    // Alternative https://www.npmjs.com/package/draft-convert
+    const blocksFromHTML = convertFromHTML(html);
 
-const pasteHTMLPlugin = createPasteHTMLPlugin({ convertFromHTML });
+    return ContentState.createFromBlockArray(
+      blocksFromHTML.contentBlocks,
+      blocksFromHTML.entityMap
+    );
+  },
+});
 
 const plugins = [pasteHTMLPlugin];
 

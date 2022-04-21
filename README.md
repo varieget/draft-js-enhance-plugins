@@ -22,6 +22,14 @@ For example:
 $ npm install @draft-js-enhance-plugins/inline-code --save
 ```
 
+### Playground
+
+View the example in the browser.
+
+```bash
+$ npm start -w examples/playground
+```
+
 ## Packages
 
 | Plugin Name                              | Source                                 |

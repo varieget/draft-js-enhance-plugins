@@ -2,7 +2,8 @@
   "name": "draft-js-enhance-plugins",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "examples/*"
   ],
   "scripts": {
     "build": "node ./scripts/cleanOutDir.mjs && npm run build --workspaces",
