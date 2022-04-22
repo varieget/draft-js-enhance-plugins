@@ -22,12 +22,18 @@ For example:
 $ npm install @draft-js-enhance-plugins/inline-code --save
 ```
 
+or
+
+```bash
+$ yarn add @draft-js-enhance-plugins/inline-code
+```
+
 ### Playground
 
 View the example in the browser.
 
 ```bash
-$ npm start -w examples/playground
+$ yarn workspace playground start
 ```
 
 ## Packages
