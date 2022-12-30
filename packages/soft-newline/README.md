@@ -4,7 +4,7 @@ _This is a plugin for the `@draft-js-plugins/editor`._
 
 ## Feature
 
-Press <kbd>tab</kbd>+<kbd>enter</kbd> to insert soft newline. No new `unstyled` block will be created.
+Press <kbd>shift</kbd>+<kbd>enter</kbd> to insert soft newline. No new `unstyled` block will be created.
 
 Refer to [`insertSoftNewline`](https://draftjs.org/docs/api-reference-rich-utils#insertsoftnewline).
 
